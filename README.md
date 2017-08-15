@@ -16,7 +16,18 @@ mysql-connector-java-6.0.6
 ### MySQL Script
 
 ```
-will be added soon
+CREATE DATABASE  IF NOT EXISTS `student_demo`;
+USE `student_demo`;
+
+DROP TABLE IF EXISTS `student`;
+
+CREATE TABLE `student` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) DEFAULT NULL,
+  `last_name` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 ```
 
